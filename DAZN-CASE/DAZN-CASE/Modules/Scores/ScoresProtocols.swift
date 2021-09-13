@@ -14,12 +14,12 @@ protocol ScoresPresenterInput: AnyObject{
 }
 
 protocol ScoresPresenterOutput: AnyObject {
-    func didGetScores(scores:ScoresResponse)
+    func didGetScores(scores:MatchesResponse)
     
 }
 
 protocol ScoresInteractorOutput: AnyObject {
-    func didGetScores(scores:ScoresResponse)
+    func didGetScores(scores:MatchesResponse)
 }
 
 protocol ScoresInteractorInput: AnyObject {

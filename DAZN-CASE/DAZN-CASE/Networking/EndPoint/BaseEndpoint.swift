@@ -15,8 +15,8 @@ enum NetworkEnvironment {
 }
 
 public enum DaznApi {
-    case getScoeres
     case getMatches
+    case getnews
 }
 
 extension DaznApi: EndPointype {
@@ -43,8 +43,8 @@ extension DaznApi: EndPointype {
 
     var path: String {
         switch self {
-        case .getScoeres:
-            return "Scoeres"
+        case .getnews:
+            return "news"
         case .getMatches:
             return "matches"
         }
@@ -56,7 +56,7 @@ extension DaznApi: EndPointype {
 
     var task: HTTPTask {
         switch self {
-        case .getScoeres:
+        case .getnews:
             return .requestParameters(bodyParameters: nil, bodyEncoding: .jsonEncoding,
                                       urlParameters: [:])
         case .getMatches:

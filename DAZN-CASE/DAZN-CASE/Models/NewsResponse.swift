@@ -1,5 +1,5 @@
 //
-//  ScoresResponse.swift
+//  NewsResponse.swift
 //  DAZN-CASE
 //
 //  Created by Devran Ates on 13.09.2021.
@@ -7,27 +7,27 @@
 
 import Foundation
 
-struct ScoresResponse: Codable {
+struct NewsResponse: Codable {
 
-    let scores: [Scores]
+    let news: [News]
 
     private enum CodingKeys: String, CodingKey {
-        case scores = "Scores"
+        case news = "news"
     }
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        scores = try values.decode([Scores].self, forKey: .scores)
+        news = try values.decode([News].self, forKey: .news)
     }
 
     func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(scores, forKey: .scores)
+        try container.encode(news, forKey: .news)
     }
 
 }
 
-struct Scores: Codable {
+struct News: Codable {
 
     let id: Int?
     let title: String?

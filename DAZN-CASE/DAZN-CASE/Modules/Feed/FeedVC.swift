@@ -64,11 +64,12 @@ extension FeedVC: MakeDropDownDataSourceProtocol{
     
     func selectItemInDropDown(indexPos: Int, makeDropDownIdentifier: String) {
         switch indexPos {
-        case 0:
+        case 1:
             let vc = ScoresRouter().prepareView()
             self.navigationController?.pushViewController(vc, animated: true)
-        case 1:
-            print("Navigate to News")
+        case 0:
+            let vc = NewsRouter().prepareView()
+            self.navigationController?.pushViewController(vc, animated: true)
         default:
             print("2")
         }

@@ -9,7 +9,7 @@ import UIKit
 
 class ScoresVC: UIViewController {
     var presenter: ScoresPresenterInput!
-    private var Scores : ScoresResponse?{
+    private var Scores : MatchesResponse?{
         didSet{
             print("Scoresget")
         }
@@ -28,7 +28,7 @@ class ScoresVC: UIViewController {
 }
 
 extension ScoresVC: ScoresPresenterOutput {
-    func didGetScores(scores: ScoresResponse) {
+    func didGetScores(scores: MatchesResponse) {
         self.Scores = scores
     }
 }

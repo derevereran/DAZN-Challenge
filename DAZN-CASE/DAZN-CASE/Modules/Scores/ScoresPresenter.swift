@@ -41,7 +41,7 @@ extension ScoresPresenter: ScoresPresenterInput {
 }
 
 extension ScoresPresenter: ScoresInteractorOutput {
-    func didGetScores(scores: ScoresResponse) {
+    func didGetScores(scores: MatchesResponse) {
         self.view.didGetScores(scores: scores)
     }
 }
