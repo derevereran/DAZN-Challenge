@@ -46,16 +46,16 @@ struct MatchesResponse: Codable {
 struct Matches: Codable {
 
     let id: Int?
-    let dateTimeUtc: String
-    let matchTime: String
-    let status: String
-    let ftsA: Int
-    let ftsB: Int
-    let htsA: Int
-    let htsB: Int
-    let teamA: TeamA
-    let teamB: TeamB
-    let extras: Extras
+    let dateTimeUtc: String?
+    let matchTime: String?
+    let status: String?
+    let ftsA: Int?
+    let ftsB: Int?
+    let htsA: Int?
+    let htsB: Int?
+    let teamA: TeamA?
+    let teamB: TeamB?
+    let extras: Extras?
 
     private enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -73,17 +73,17 @@ struct Matches: Codable {
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        id = try values.decode(Int.self, forKey: .id)
-        dateTimeUtc = try values.decode(String.self, forKey: .dateTimeUtc)
-        matchTime = try values.decode(String.self, forKey: .matchTime)
-        status = try values.decode(String.self, forKey: .status)
-        ftsA = try values.decode(Int.self, forKey: .ftsA)
-        ftsB = try values.decode(Int.self, forKey: .ftsB)
-        htsA = try values.decode(Int.self, forKey: .htsA)
-        htsB = try values.decode(Int.self, forKey: .htsB)
-        teamA = try values.decode(TeamA.self, forKey: .teamA)
-        teamB = try values.decode(TeamB.self, forKey: .teamB)
-        extras = try values.decode(Extras.self, forKey: .extras)
+        id = try? values.decode(Int.self, forKey: .id)
+        dateTimeUtc = try? values.decode(String.self, forKey: .dateTimeUtc)
+        matchTime = try? values.decode(String.self, forKey: .matchTime)
+        status = try? values.decode(String.self, forKey: .status)
+        ftsA = try? values.decode(Int.self, forKey: .ftsA)
+        ftsB = try? values.decode(Int.self, forKey: .ftsB)
+        htsA = try? values.decode(Int.self, forKey: .htsA)
+        htsB = try? values.decode(Int.self, forKey: .htsB)
+        teamA = try? values.decode(TeamA.self, forKey: .teamA)
+        teamB = try? values.decode(TeamB.self, forKey: .teamB)
+        extras = try? values.decode(Extras.self, forKey: .extras)
     }
 
     func encode(to encoder: Encoder) throws {
@@ -104,11 +104,11 @@ struct Matches: Codable {
 }
 struct TeamA: Codable {
 
-    let id: Int
-    let uuid: String
-    let name: String
-    let tlaName: String
-    let displayName: String
+    let id: Int?
+    let uuid: String?
+    let name: String?
+    let tlaName: String?
+    let displayName: String?
 
     private enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -140,11 +140,11 @@ struct TeamA: Codable {
 
 struct TeamB: Codable {
 
-    let id: Int
-    let uuid: String
-    let name: String
-    let tlaName: String
-    let displayName: String
+    let id: Int?
+    let uuid: String?
+    let name: String?
+    let tlaName: String?
+    let displayName: String?
 
     private enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -156,11 +156,11 @@ struct TeamB: Codable {
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        id = try values.decode(Int.self, forKey: .id)
-        uuid = try values.decode(String.self, forKey: .uuid)
-        name = try values.decode(String.self, forKey: .name)
-        tlaName = try values.decode(String.self, forKey: .tlaName)
-        displayName = try values.decode(String.self, forKey: .displayName)
+        id = try? values.decode(Int.self, forKey: .id)
+        uuid = try? values.decode(String.self, forKey: .uuid)
+        name = try? values.decode(String.self, forKey: .name)
+        tlaName = try? values.decode(String.self, forKey: .tlaName)
+        displayName = try? values.decode(String.self, forKey: .displayName)
     }
 
     func encode(to encoder: Encoder) throws {
@@ -177,8 +177,8 @@ struct TeamB: Codable {
 
 struct Extras: Codable {
 
-    let iddaaCode: Int
-    let iddaaLive: Bool
+    let iddaaCode: Int?
+    let iddaaLive: Bool?
 
     private enum CodingKeys: String, CodingKey {
         case iddaaCode = "iddaa_code"
@@ -187,8 +187,8 @@ struct Extras: Codable {
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        iddaaCode = try values.decode(Int.self, forKey: .iddaaCode)
-        iddaaLive = try values.decode(Bool.self, forKey: .iddaaLive)
+        iddaaCode = try? values.decode(Int.self, forKey: .iddaaCode)
+        iddaaLive = try? values.decode(Bool.self, forKey: .iddaaLive)
     }
 
     func encode(to encoder: Encoder) throws {

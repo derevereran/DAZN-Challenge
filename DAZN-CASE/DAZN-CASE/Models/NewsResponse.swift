@@ -9,7 +9,7 @@ import Foundation
 
 struct NewsResponse: Codable {
 
-    let news: [News]
+    let news: [News]?
 
     private enum CodingKeys: String, CodingKey {
         case news = "news"
@@ -17,7 +17,7 @@ struct NewsResponse: Codable {
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        news = try values.decode([News].self, forKey: .news)
+        news = try? values.decode([News].self, forKey: .news)
     }
 
     func encode(to encoder: Encoder) throws {
