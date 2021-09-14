@@ -13,8 +13,9 @@ class ScoresInteractor {
 
 extension ScoresInteractor: ScoresInteractorInput{
     func getScores() {
-        NetworkManager().get(endpoint: .getMatches,type: MatchesResponse.self) { scores, error in
+        NetworkManager().get(endpoint: .getMatches,type: MatchesResponse.self) { [weak self] scores, error  in
             if let scores = scores{
+                guard let self = self else {return}
                 self.output.didGetScores(scores: scores)
             }
         }

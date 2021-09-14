@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B6DD00B26F0CB72007F3E9C /* ScoresTebleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD00926F0CB72007F3E9C /* ScoresTebleCell.swift */; };
+		9B6DD00C26F0CB72007F3E9C /* ScoresTebleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6DD00A26F0CB72007F3E9C /* ScoresTebleCell.xib */; };
+		9B6DD01226F0D62A007F3E9C /* Date+String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD01126F0D62A007F3E9C /* Date+String+Extensions.swift */; };
 		9BDE70AF26EE5F7C0031CC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE70AE26EE5F7C0031CC1A /* AppDelegate.swift */; };
 		9BDE70B926EE5F7C0031CC1A /* DAZN_CASE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE70B726EE5F7C0031CC1A /* DAZN_CASE.xcdatamodeld */; };
 		9BDE70BB26EE5F7F0031CC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BDE70BA26EE5F7F0031CC1A /* Assets.xcassets */; };
@@ -66,6 +69,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B6DD00926F0CB72007F3E9C /* ScoresTebleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresTebleCell.swift; sourceTree = "<group>"; };
+		9B6DD00A26F0CB72007F3E9C /* ScoresTebleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoresTebleCell.xib; sourceTree = "<group>"; };
+		9B6DD01126F0D62A007F3E9C /* Date+String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String+Extensions.swift"; sourceTree = "<group>"; };
 		9BDE70AB26EE5F7C0031CC1A /* DAZN-CASE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DAZN-CASE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BDE70AE26EE5F7C0031CC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BDE70B826EE5F7C0031CC1A /* DAZN_CASE.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DAZN_CASE.xcdatamodel; sourceTree = "<group>"; };
@@ -138,6 +144,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B6DD00826F0CB4E007F3E9C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9B6DD00926F0CB72007F3E9C /* ScoresTebleCell.swift */,
+				9B6DD00A26F0CB72007F3E9C /* ScoresTebleCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		9BDE70A226EE5F7C0031CC1A = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				9BDE711226EEE6E10031CC1A /* UICollectionView + Extension.swift */,
+				9B6DD01126F0D62A007F3E9C /* Date+String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -326,6 +342,7 @@
 		9BDE711C26EEEB680031CC1A /* Scores */ = {
 			isa = PBXGroup;
 			children = (
+				9B6DD00826F0CB4E007F3E9C /* Cells */,
 				9BDE711D26EEEB860031CC1A /* ScoresVC.swift */,
 				9BDE711E26EEEB860031CC1A /* ScoresVC.xib */,
 				9BDE712126EEEB990031CC1A /* ScoresRouter.swift */,
@@ -456,6 +473,7 @@
 				9BDE70BE26EE5F7F0031CC1A /* LaunchScreen.storyboard in Resources */,
 				9BDE710F26EED67D0031CC1A /* DropDownCell.xib in Resources */,
 				9BDE712D26EF33B90031CC1A /* NewsVC.xib in Resources */,
+				9B6DD00C26F0CB72007F3E9C /* ScoresTebleCell.xib in Resources */,
 				9BDE712026EEEB860031CC1A /* ScoresVC.xib in Resources */,
 				9BDE70BB26EE5F7F0031CC1A /* Assets.xcassets in Resources */,
 			);
@@ -493,6 +511,7 @@
 				9BDE712C26EF33B90031CC1A /* NewsVC.swift in Sources */,
 				9BDE712826EEEBDC0031CC1A /* ScoresProtocols.swift in Sources */,
 				9BDE710626EE8C260031CC1A /* FeedVC.swift in Sources */,
+				9B6DD00B26F0CB72007F3E9C /* ScoresTebleCell.swift in Sources */,
 				9BDE70AF26EE5F7C0031CC1A /* AppDelegate.swift in Sources */,
 				9BDE711126EED76C0031CC1A /* FeedRouter.swift in Sources */,
 				9BDE711726EEE7530031CC1A /* Constant.swift in Sources */,
@@ -502,6 +521,7 @@
 				9BDE70EA26EE6A5D0031CC1A /* ParameterEncoding.swift in Sources */,
 				9BDE70FD26EE77100031CC1A /* EndPointype.swift in Sources */,
 				9BDE710E26EED67D0031CC1A /* DropDownCell.swift in Sources */,
+				9B6DD01226F0D62A007F3E9C /* Date+String+Extensions.swift in Sources */,
 				9BDE70F226EE766B0031CC1A /* HTTPMethod.swift in Sources */,
 				9BDE70B926EE5F7C0031CC1A /* DAZN_CASE.xcdatamodeld in Sources */,
 				9BDE713526EF344D0031CC1A /* NewsProtocols.swift in Sources */,
