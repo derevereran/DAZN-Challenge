@@ -10,6 +10,8 @@
 		9B6DD00B26F0CB72007F3E9C /* ScoresTebleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD00926F0CB72007F3E9C /* ScoresTebleCell.swift */; };
 		9B6DD00C26F0CB72007F3E9C /* ScoresTebleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6DD00A26F0CB72007F3E9C /* ScoresTebleCell.xib */; };
 		9B6DD01226F0D62A007F3E9C /* Date+String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD01126F0D62A007F3E9C /* Date+String+Extensions.swift */; };
+		9B9B752626F0E77400B19DFA /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B752426F0E77400B19DFA /* NewsCell.swift */; };
+		9B9B752726F0E77400B19DFA /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9B752526F0E77400B19DFA /* NewsCell.xib */; };
 		9BDE70AF26EE5F7C0031CC1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE70AE26EE5F7C0031CC1A /* AppDelegate.swift */; };
 		9BDE70B926EE5F7C0031CC1A /* DAZN_CASE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BDE70B726EE5F7C0031CC1A /* DAZN_CASE.xcdatamodeld */; };
 		9BDE70BB26EE5F7F0031CC1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BDE70BA26EE5F7F0031CC1A /* Assets.xcassets */; };
@@ -72,6 +74,8 @@
 		9B6DD00926F0CB72007F3E9C /* ScoresTebleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresTebleCell.swift; sourceTree = "<group>"; };
 		9B6DD00A26F0CB72007F3E9C /* ScoresTebleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoresTebleCell.xib; sourceTree = "<group>"; };
 		9B6DD01126F0D62A007F3E9C /* Date+String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String+Extensions.swift"; sourceTree = "<group>"; };
+		9B9B752426F0E77400B19DFA /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		9B9B752526F0E77400B19DFA /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		9BDE70AB26EE5F7C0031CC1A /* DAZN-CASE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DAZN-CASE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BDE70AE26EE5F7C0031CC1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BDE70B826EE5F7C0031CC1A /* DAZN_CASE.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DAZN_CASE.xcdatamodel; sourceTree = "<group>"; };
@@ -149,6 +153,15 @@
 			children = (
 				9B6DD00926F0CB72007F3E9C /* ScoresTebleCell.swift */,
 				9B6DD00A26F0CB72007F3E9C /* ScoresTebleCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9B9B752326F0E72B00B19DFA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9B9B752426F0E77400B19DFA /* NewsCell.swift */,
+				9B9B752526F0E77400B19DFA /* NewsCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -356,6 +369,7 @@
 		9BDE712926EF339D0031CC1A /* News */ = {
 			isa = PBXGroup;
 			children = (
+				9B9B752326F0E72B00B19DFA /* Cells */,
 				9BDE712A26EF33B90031CC1A /* NewsVC.swift */,
 				9BDE712B26EF33B90031CC1A /* NewsVC.xib */,
 				9BDE712E26EF33C80031CC1A /* NewsRouter.swift */,
@@ -471,6 +485,7 @@
 			files = (
 				9BDE710726EE8C260031CC1A /* FeedVC.xib in Resources */,
 				9BDE70BE26EE5F7F0031CC1A /* LaunchScreen.storyboard in Resources */,
+				9B9B752726F0E77400B19DFA /* NewsCell.xib in Resources */,
 				9BDE710F26EED67D0031CC1A /* DropDownCell.xib in Resources */,
 				9BDE712D26EF33B90031CC1A /* NewsVC.xib in Resources */,
 				9B6DD00C26F0CB72007F3E9C /* ScoresTebleCell.xib in Resources */,
@@ -530,6 +545,7 @@
 				9BDE70F626EE769D0031CC1A /* NetworkRouter.swift in Sources */,
 				9BDE710226EE77840031CC1A /* NetworkManager.swift in Sources */,
 				9BDE712626EEEBB90031CC1A /* ScoresPresenter.swift in Sources */,
+				9B9B752626F0E77400B19DFA /* NewsCell.swift in Sources */,
 				9BDE713326EF33E60031CC1A /* NewsPresenter.swift in Sources */,
 				9BDE70EF26EE6A850031CC1A /* JSONParameterEncoder.swift in Sources */,
 				9BDE712426EEEBAA0031CC1A /* ScoresInteractor.swift in Sources */,
