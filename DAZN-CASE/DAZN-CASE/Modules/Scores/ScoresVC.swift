@@ -27,7 +27,6 @@ class ScoresVC: UIViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.register(ScoresTebleCell.self)
-        self.tableView.register(MatchesHeaderCell.self)
     }
     
     
