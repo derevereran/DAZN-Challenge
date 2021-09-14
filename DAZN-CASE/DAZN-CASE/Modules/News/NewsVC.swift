@@ -50,8 +50,8 @@ extension NewsVC : UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let newsCell : NewsCell = tableView.dequeueReusableCells(for: indexPath)
-        newsCell.setCell(match: (self.scores?.matches?[indexPath.row])!, isEven: (indexPath.row) % 2 == 0)
-        return  scoresCell
+       
+        return  newsCell
     }
     
 }
