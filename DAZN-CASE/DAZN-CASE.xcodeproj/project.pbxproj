@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FC406B183C64E9629F8FFC6 /* Pods_DAZN_CASE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC966A3E9EF6AC61E62D27B0 /* Pods_DAZN_CASE.framework */; };
+		4D382A1361A47B56788389D7 /* Pods_DAZN_CASETests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B11A4D5EDB47D50CF96F54 /* Pods_DAZN_CASETests.framework */; };
+		99B9CDFDB78C821040017430 /* Pods_DAZN_CASE_DAZN_CASEUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C584C7C158DB3A568E543AFC /* Pods_DAZN_CASE_DAZN_CASEUITests.framework */; };
 		9B6DD00B26F0CB72007F3E9C /* ScoresTebleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD00926F0CB72007F3E9C /* ScoresTebleCell.swift */; };
 		9B6DD00C26F0CB72007F3E9C /* ScoresTebleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B6DD00A26F0CB72007F3E9C /* ScoresTebleCell.xib */; };
 		9B6DD01226F0D62A007F3E9C /* Date+String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD01126F0D62A007F3E9C /* Date+String+Extensions.swift */; };
@@ -71,6 +74,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A1D7023B9E60E73E4604B1D /* Pods-DAZN-CASETests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAZN-CASETests.debug.xcconfig"; path = "Target Support Files/Pods-DAZN-CASETests/Pods-DAZN-CASETests.debug.xcconfig"; sourceTree = "<group>"; };
+		461E80FCC036D4BC96F12EEB /* Pods-DAZN-CASE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAZN-CASE.release.xcconfig"; path = "Target Support Files/Pods-DAZN-CASE/Pods-DAZN-CASE.release.xcconfig"; sourceTree = "<group>"; };
+		5065F1FC97443BA01E8B14C6 /* Pods-DAZN-CASE-DAZN-CASEUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAZN-CASE-DAZN-CASEUITests.debug.xcconfig"; path = "Target Support Files/Pods-DAZN-CASE-DAZN-CASEUITests/Pods-DAZN-CASE-DAZN-CASEUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		64B11A4D5EDB47D50CF96F54 /* Pods_DAZN_CASETests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DAZN_CASETests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D2F861A5601A46C30E920CE /* Pods-DAZN-CASETests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAZN-CASETests.release.xcconfig"; path = "Target Support Files/Pods-DAZN-CASETests/Pods-DAZN-CASETests.release.xcconfig"; sourceTree = "<group>"; };
 		9B6DD00926F0CB72007F3E9C /* ScoresTebleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresTebleCell.swift; sourceTree = "<group>"; };
 		9B6DD00A26F0CB72007F3E9C /* ScoresTebleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoresTebleCell.xib; sourceTree = "<group>"; };
 		9B6DD01126F0D62A007F3E9C /* Date+String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String+Extensions.swift"; sourceTree = "<group>"; };
@@ -121,6 +129,10 @@
 		9BDE713026EF33D90031CC1A /* NewsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInteractor.swift; sourceTree = "<group>"; };
 		9BDE713226EF33E60031CC1A /* NewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresenter.swift; sourceTree = "<group>"; };
 		9BDE713426EF344D0031CC1A /* NewsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsProtocols.swift; sourceTree = "<group>"; };
+		BC913C39E25C3C2920E3DEA1 /* Pods-DAZN-CASE-DAZN-CASEUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAZN-CASE-DAZN-CASEUITests.release.xcconfig"; path = "Target Support Files/Pods-DAZN-CASE-DAZN-CASEUITests/Pods-DAZN-CASE-DAZN-CASEUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C584C7C158DB3A568E543AFC /* Pods_DAZN_CASE_DAZN_CASEUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DAZN_CASE_DAZN_CASEUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC966A3E9EF6AC61E62D27B0 /* Pods_DAZN_CASE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DAZN_CASE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED4133FFF6DF3FFB666FD99 /* Pods-DAZN-CASE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAZN-CASE.debug.xcconfig"; path = "Target Support Files/Pods-DAZN-CASE/Pods-DAZN-CASE.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC406B183C64E9629F8FFC6 /* Pods_DAZN_CASE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D382A1361A47B56788389D7 /* Pods_DAZN_CASETests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,12 +156,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B9CDFDB78C821040017430 /* Pods_DAZN_CASE_DAZN_CASEUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AA06A0E4FC578EDA56B8843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC966A3E9EF6AC61E62D27B0 /* Pods_DAZN_CASE.framework */,
+				C584C7C158DB3A568E543AFC /* Pods_DAZN_CASE_DAZN_CASEUITests.framework */,
+				64B11A4D5EDB47D50CF96F54 /* Pods_DAZN_CASETests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B6DD00826F0CB4E007F3E9C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +198,8 @@
 				9BDE70C726EE5F7F0031CC1A /* DAZN-CASETests */,
 				9BDE70D226EE5F7F0031CC1A /* DAZN-CASEUITests */,
 				9BDE70AC26EE5F7C0031CC1A /* Products */,
+				C2415963D8E8EE882362B1D1 /* Pods */,
+				0AA06A0E4FC578EDA56B8843 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -380,6 +407,20 @@
 			path = News;
 			sourceTree = "<group>";
 		};
+		C2415963D8E8EE882362B1D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FED4133FFF6DF3FFB666FD99 /* Pods-DAZN-CASE.debug.xcconfig */,
+				461E80FCC036D4BC96F12EEB /* Pods-DAZN-CASE.release.xcconfig */,
+				5065F1FC97443BA01E8B14C6 /* Pods-DAZN-CASE-DAZN-CASEUITests.debug.xcconfig */,
+				BC913C39E25C3C2920E3DEA1 /* Pods-DAZN-CASE-DAZN-CASEUITests.release.xcconfig */,
+				2A1D7023B9E60E73E4604B1D /* Pods-DAZN-CASETests.debug.xcconfig */,
+				6D2F861A5601A46C30E920CE /* Pods-DAZN-CASETests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,9 +428,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BDE70D826EE5F7F0031CC1A /* Build configuration list for PBXNativeTarget "DAZN-CASE" */;
 			buildPhases = (
+				CC1FD5243679AAFE4D7A7AE5 /* [CP] Check Pods Manifest.lock */,
 				9BDE70A726EE5F7C0031CC1A /* Sources */,
 				9BDE70A826EE5F7C0031CC1A /* Frameworks */,
 				9BDE70A926EE5F7C0031CC1A /* Resources */,
+				D5DEE8E71B339046FEB24E08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -404,6 +447,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BDE70DB26EE5F7F0031CC1A /* Build configuration list for PBXNativeTarget "DAZN-CASETests" */;
 			buildPhases = (
+				F6092CE7580C4C3D4A9E11EB /* [CP] Check Pods Manifest.lock */,
 				9BDE70C026EE5F7F0031CC1A /* Sources */,
 				9BDE70C126EE5F7F0031CC1A /* Frameworks */,
 				9BDE70C226EE5F7F0031CC1A /* Resources */,
@@ -422,9 +466,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BDE70DE26EE5F7F0031CC1A /* Build configuration list for PBXNativeTarget "DAZN-CASEUITests" */;
 			buildPhases = (
+				A598B899662C68D0EA2108FF /* [CP] Check Pods Manifest.lock */,
 				9BDE70CB26EE5F7F0031CC1A /* Sources */,
 				9BDE70CC26EE5F7F0031CC1A /* Frameworks */,
 				9BDE70CD26EE5F7F0031CC1A /* Resources */,
+				907B2979F278C02C3BAFAEA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -509,6 +555,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		907B2979F278C02C3BAFAEA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DAZN-CASE-DAZN-CASEUITests/Pods-DAZN-CASE-DAZN-CASEUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DAZN-CASE-DAZN-CASEUITests/Pods-DAZN-CASE-DAZN-CASEUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DAZN-CASE-DAZN-CASEUITests/Pods-DAZN-CASE-DAZN-CASEUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A598B899662C68D0EA2108FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DAZN-CASE-DAZN-CASEUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC1FD5243679AAFE4D7A7AE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DAZN-CASE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5DEE8E71B339046FEB24E08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DAZN-CASE/Pods-DAZN-CASE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DAZN-CASE/Pods-DAZN-CASE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DAZN-CASE/Pods-DAZN-CASE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6092CE7580C4C3D4A9E11EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DAZN-CASETests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9BDE70A726EE5F7C0031CC1A /* Sources */ = {
@@ -713,6 +862,7 @@
 		};
 		9BDE70D926EE5F7F0031CC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED4133FFF6DF3FFB666FD99 /* Pods-DAZN-CASE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -732,6 +882,7 @@
 		};
 		9BDE70DA26EE5F7F0031CC1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 461E80FCC036D4BC96F12EEB /* Pods-DAZN-CASE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -751,6 +902,7 @@
 		};
 		9BDE70DC26EE5F7F0031CC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A1D7023B9E60E73E4604B1D /* Pods-DAZN-CASETests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -772,6 +924,7 @@
 		};
 		9BDE70DD26EE5F7F0031CC1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2F861A5601A46C30E920CE /* Pods-DAZN-CASETests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -793,6 +946,7 @@
 		};
 		9BDE70DF26EE5F7F0031CC1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5065F1FC97443BA01E8B14C6 /* Pods-DAZN-CASE-DAZN-CASEUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -812,6 +966,7 @@
 		};
 		9BDE70E026EE5F7F0031CC1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC913C39E25C3C2920E3DEA1 /* Pods-DAZN-CASE-DAZN-CASEUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

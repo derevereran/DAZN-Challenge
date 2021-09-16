@@ -6,8 +6,9 @@
 //
 
 import UIKit
-
+import Kingfisher
 class NewsCell: UITableViewCell,ReusableViews {
+    @IBOutlet weak var neswImage: UIImageView!
     @IBOutlet weak var datelabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
@@ -27,6 +28,10 @@ class NewsCell: UITableViewCell,ReusableViews {
         self.datelabel.text = news.date?.convertToStringDate(to: "E, d MMM yyyy HH:mm")
         self.titleLabel.text = news.title
         self.descLabel.text = news.description
+        if let url = URL(string: news.picUrl ?? ""){
+            self.neswImage.kf.setImage(with: url)
+        }
+       
         
     }
     

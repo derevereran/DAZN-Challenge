@@ -18,7 +18,8 @@ extension String {
                                        "yyyy-MM-dd'T'HH:mm:ssZZZZZ",
                                        "YYYY-MM-dd HH:mm:ss 'GMT'Z",
         "yyyy-MM-dd HH:mm:ss",
-        "yyyy.MM.dd HH:mm"]
+        "yyyy.MM.dd HH:mm",
+        "dd.MM.yyyy HH:mm"]
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "TR_tr")
         for format in dateTemplates{

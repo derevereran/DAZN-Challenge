@@ -6,20 +6,16 @@
 //
 
 import UIKit
-
+import WebKit
 class NewsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var presenter: NewsPresenterInput!
-    private var news : NewsResponse?{
-        didSet{
-            print("Newsget")
-        }
-    }
+    private var news : NewsResponse?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter.getNews()
-       
+        self.manageUI()
     }
     
     func manageUI(){
@@ -37,6 +33,9 @@ class NewsVC: UIViewController {
 extension NewsVC: NewsPresenterOutput {
     func didGetNews(news: NewsResponse) {
         self.news = news
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }
 
@@ -50,8 +49,33 @@ extension NewsVC : UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let newsCell : NewsCell = tableView.dequeueReusableCells(for: indexPath)
-       
+        if let news = self.news?.news?[indexPath.row]{
+            newsCell.setCell(news: news)
+        }
         return  newsCell
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = WebViewController()
+        vc.url = self.news?.news?[indexPath.row].link
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+}
+
+class WebViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
+    var webView: WKWebView!
+    var url : String?
+    override func loadView() {
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
+        
+        let url = URL(string: self.url!)!
+        webView.load(URLRequest(url: url))
+        webView.allowsBackForwardNavigationGestures = true
+    }
 }

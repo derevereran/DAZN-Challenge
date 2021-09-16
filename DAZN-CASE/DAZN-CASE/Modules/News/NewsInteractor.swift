@@ -12,8 +12,9 @@ class NewsInteractor {
 
 extension NewsInteractor: NewsInteractorInput{
     func getNews() {
-        NetworkManager().get(endpoint: .getnews,type: NewsResponse.self) { news, error in
+        NetworkManager().get(endpoint: .getnews,type: NewsResponse.self) { [weak self] news, error in
             if let news = news{
+                guard let self = self else {return}
                 self.output.didGetNews(news: news)
             }
         }
