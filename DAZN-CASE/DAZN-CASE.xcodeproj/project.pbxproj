@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -216,6 +216,7 @@
 		9BDE70AD26EE5F7C0031CC1A /* DAZN-CASE */ = {
 			isa = PBXGroup;
 			children = (
+				9BDE710326EE7F820031CC1A /* Feed */,
 				9BDE70E726EE6A2C0031CC1A /* Modules */,
 				9BDE70E626EE6A240031CC1A /* App */,
 				9BDE70E526EE6A0E0031CC1A /* Models */,
@@ -306,7 +307,6 @@
 			children = (
 				9BDE712926EF339D0031CC1A /* News */,
 				9BDE711C26EEEB680031CC1A /* Scores */,
-				9BDE710326EE7F820031CC1A /* Feed */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -417,7 +417,6 @@
 				2A1D7023B9E60E73E4604B1D /* Pods-DAZN-CASETests.debug.xcconfig */,
 				6D2F861A5601A46C30E920CE /* Pods-DAZN-CASETests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
