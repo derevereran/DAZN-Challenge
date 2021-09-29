@@ -27,10 +27,6 @@ struct NetworkManager {
     let router = Router<DaznApi>()
     
     
-  
-    
-    
-    
     func get<T:Decodable>(endpoint:DaznApi, type: T.Type, completion: @escaping (_ datas: T?,_ error: String?)->()){
         router.request(route: endpoint) { data, response, error in
 
@@ -44,7 +40,9 @@ struct NetworkManager {
                 switch result {
                 case .success:
                     guard let responseData = data else {
+                        DispatchQueue.main.async {
                         completion(nil, NetworkResponse.noData.rawValue)
+                        }
                         return
                     }
                     do {
@@ -52,13 +50,18 @@ struct NetworkManager {
                         let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
                         print("Json\(jsonData)")
                         let apiResponse = try JSONDecoder().decode(T.self, from: responseData)
-                        completion(apiResponse,nil)
+                        DispatchQueue.main.async {
+                            completion(apiResponse,nil)
+                        }
+                        
                     }catch {
                         print(error)
                         completion(nil, NetworkResponse.unableToDecode.rawValue)
                     }
                 case .failure(let networkFailureError):
+                    DispatchQueue.main.async {
                     completion(nil, networkFailureError)
+                    }
                 }
             }
         }

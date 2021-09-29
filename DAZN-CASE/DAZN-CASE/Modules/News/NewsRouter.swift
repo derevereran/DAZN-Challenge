@@ -11,22 +11,23 @@ import UIKit
 class NewsRouter{
     
     var view = NewsVC()
-    
     func prepareView() ->  UIViewController{
         let interactor = NewsInteractor()
         let presenter = NewsPresenter()
+        
         presenter.interactor = interactor
         presenter.router = self
         presenter.view = self.view
         view.presenter = presenter
         interactor.output = presenter
+        
         return view
     }
-
 }
 
 extension NewsRouter: NewsRouterProtocol{
     
-    
+    //todo
+    //navigate other views
     
 }

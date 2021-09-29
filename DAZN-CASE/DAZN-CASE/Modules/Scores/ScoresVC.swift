@@ -12,7 +12,7 @@ class ScoresVC: UIViewController {
     var presenter: ScoresPresenterInput!
     private var scores : MatchesResponse?{
         didSet{
-            
+            self.tableView.reloadData()
         }
     }
     
@@ -40,9 +40,6 @@ class ScoresVC: UIViewController {
 extension ScoresVC: ScoresPresenterOutput {
     func didGetScores(scores: MatchesResponse) {
         self.scores = scores
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
     }
 }
 

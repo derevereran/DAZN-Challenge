@@ -25,5 +25,5 @@ protocol NewsInteractorInput: AnyObject {
 }
 
 protocol NewsRouterProtocol {
-    
+    // func navigateToDetail(id:String)
 }

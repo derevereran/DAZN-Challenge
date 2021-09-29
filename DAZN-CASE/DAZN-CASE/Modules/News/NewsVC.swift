@@ -10,7 +10,11 @@ import WebKit
 class NewsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var presenter: NewsPresenterInput!
-    private var news : NewsResponse?
+    private var news : NewsResponse?{
+        didSet{
+            self.tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +37,6 @@ class NewsVC: UIViewController {
 extension NewsVC: NewsPresenterOutput {
     func didGetNews(news: NewsResponse) {
         self.news = news
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
     }
 }
 

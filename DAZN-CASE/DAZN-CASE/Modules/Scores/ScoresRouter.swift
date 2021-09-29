@@ -13,13 +13,16 @@ class ScoresRouter{
     var view = ScoresVC()
     
     func prepareView() ->  UIViewController{
+        
         let interactor = ScoresInteractor()
         let presenter = ScoresPresenter()
+        
         presenter.interactor = interactor
         presenter.router = self
         presenter.view = self.view
         view.presenter = presenter
         interactor.output = presenter
+        
         return view
     }
 

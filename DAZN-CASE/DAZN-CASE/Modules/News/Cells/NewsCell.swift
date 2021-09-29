@@ -31,8 +31,5 @@ class NewsCell: UITableViewCell,ReusableViews {
         if let url = URL(string: news.picUrl ?? ""){
             self.neswImage.kf.setImage(with: url)
         }
-       
-        
     }
-    
 }
